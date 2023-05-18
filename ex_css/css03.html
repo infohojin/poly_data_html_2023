@@ -14,6 +14,14 @@
             border:1px dashed red;
         }
 
+        
+
+    </style>
+</head>
+<body>
+    <!-- 패딩 -->
+    <h2>패딩영역</h2>
+    <style>
         .el-1 {
             /* 상하좌우 전체 */
             padding: 10px;
@@ -33,13 +41,9 @@
             /* 상단, 우측, 하단, 왼쪽 */
             padding: 10px 30px 50px 70px;
         }
-
     </style>
-</head>
-<body>
-    <!-- 패딩 -->
-    <h2>패딩영역</h2>
     <div class="el-1">
+        <!-- 내부 영역을 패딩... -->
         <div>요소1</div>        
     </div>
     <div class="el-2">
@@ -53,6 +57,45 @@
     </div>
 
     <hr>
+
+    <h2>마진영역</h2>
+    <style>
+        .inner-1 {
+            margin:10px;
+        }
+
+        .inner-2 {
+            /* 상하, 좌우 */
+            margin:10px 30px;
+        }
+
+        .inner-3 {
+            /* 상, 좌우, 하단 */
+            margin:10px 30px 50px;
+        }
+
+        .inner-4 {
+            /* 상, 우, 하, 좌측 */
+            margin:10px 30px 50px 70px;
+        }
+    </style>
+    <div>
+        <!-- 안에 요소의 바깥쪽.. -->
+        <div class="inner-1">요소5</div>        
+    </div>
+    <div>
+        <!-- 안에 요소의 바깥쪽.. -->
+        <div class="inner-2">요소6</div>        
+    </div>
+    <div>
+        <!-- 안에 요소의 바깥쪽.. -->
+        <div class="inner-3">요소7</div>        
+    </div>
+    <div>
+        <!-- 안에 요소의 바깥쪽.. -->
+        <div class="inner-4">요소8</div>        
+    </div>
+
 
 
 </body>
