@@ -9,14 +9,50 @@
         div {
             border: 1px solid black;
         }
+
+        div div {
+            border:1px dashed red;
+        }
+
+        .el-1 {
+            /* 상하좌우 전체 */
+            padding: 10px;
+        }
+
+        .el-2 {
+            /*상단, 하단*/
+            padding: 10px 40px;
+        }
+
+        .el-3 {
+            /* 상단, 좌우, 하단 */
+            padding: 10px 40px 60px;
+        }
+
+        .el-4 {
+            /* 상단, 우측, 하단, 왼쪽 */
+            padding: 10px 30px 50px 70px;
+        }
+
     </style>
 </head>
 <body>
     <!-- 패딩 -->
+    <h2>패딩영역</h2>
+    <div class="el-1">
+        <div>요소1</div>        
+    </div>
+    <div class="el-2">
+        <div>요소2</div> 
+    </div>
+    <div class="el-3">
+        <div>요소3</div> 
+    </div>
+    <div class="el-4">
+        <div>요소4</div> 
+    </div>
 
-    <div>요소1</div>
-    <div>요소2</div>
-    <div>요소3</div>
+    <hr>
 
 
 </body>
