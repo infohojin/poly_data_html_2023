@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            border: 1px dashed red;
+            width: 200px;
+            height: 200px;
+
+            padding: 50px;
+        }
+
+        .inner {
+            border: 1px solid blue;
+            background-color: cadetblue;
+            width: 100px;
+            height: 100px;
+        }
+
+        .el-1 {
+            margin-top: -100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>네거티브 마진</h2>
+
+    <div class="outer">
+        <div class="inner el-1">
+            요소1
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <h2>마진 병합</h2>
+
+    <style>
+        .el-2 {
+            border:1px solid black;
+            margin:70px;
+        }
+        .el-3 {
+            border:1px solid black;
+            margin:50px;
+        }
+    </style>
+    <div class="el-2">
+        요소2
+    </div>
+
+    <!-- 두개의 요소의 마진이 중첩이 되면,
+    하나만 선택되어 적용된다. (큰값이) -->
+
+    <div class="el-3">
+        요소3
+    </div>
+
+
+
+</body>
+</html>
