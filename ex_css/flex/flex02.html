@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex02</title>
+
+    <style>
+        #wrapper {
+            background-color:darkgray;
+            height: 100vh;
+
+            display:flex;
+        }
+
+        #side {
+            background-color: blueviolet;
+            width: 200px;
+            flex-shrink: 0;
+        }
+
+        #main {
+            background-color: darkcyan;
+            flex-grow: 1;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        #right {
+            width: 100px;
+        }
+
+        header{
+            background-color: blue;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        footer {
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="side">Side</div>
+        <div id="main">
+            <header>Header</header>
+            <main>Content</main>
+            <footer>Footer</footer>
+        </div>
+        <div id="right">side-right</div>
+    </div>
+</body>
+</html>
