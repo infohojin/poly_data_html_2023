@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        img {
+            width: 100px;
+        }
+
+        .origin {
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid black;
+        }
+
+        .scalex:hover { transform: scaleX(2.5); }
+        .scaley:hover { transform: scaleY(2.5); }
+        .scale:hover { transform: scale(0.5); }
+    </style>
+
+</head>
+<body>
+
+    <div class="origin">
+        <div class="scalex">
+            <img src="./img/apple.png">
+        </div>
+    </div>
+    <div class="origin">
+    <div class="scaley"><img src="./img/apple.png"></div>
+    </div>
+    <div class="origin">
+    <div class="scale"><img src="./img/apple.png"> </div>
+    </div>
+      
+</body>
+</html>

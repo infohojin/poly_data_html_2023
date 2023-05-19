@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .outer {
+            position: relative;
+            border:1px dashed red;
+            padding:20px;
+            width:500px;
+            height: 500px;
+        }
+
+        .inner {
+            position: absolute;
+            right:0;
+            bottom: 0;;
+            border:1px solid black;
+            padding:20px;
+            width:20px;
+            height: 20px;
+            background-color: aqua;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            Poly
+        </div>
+    </div>
+    
+</body>
+</html>

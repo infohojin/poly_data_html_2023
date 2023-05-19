@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #b3e5fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            max-width: 1000px; height: 100vh; 
+            margin: 0 auto; font-size: 40px; 
+            text-align: center; 
+            text-transform: uppercase; 
+        }
+
+        .header {
+            width: 100%; 
+            height: 100px; 
+            line-height: 100px; 
+            background: #0277bd;;
+            color: white;
+
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .nav {
+            width: 100%; 
+            height: 100px; 
+            line-height: 100px; 
+            background: #0288d1;
+            color: white;
+        }
+
+        .main {
+            display:flex;
+        }
+
+        .side { 
+            width: 300px; 
+            min-height: 600px; 
+            background: #039be5;
+            flex-shrink: 0;
+        }
+        
+        .contents {
+            background: #29b6f6;
+            flex-grow: 1;
+        }
+
+        .side-right {
+            width: 150px; 
+            min-height: 600px; 
+            background: #039be5;
+            flex-shrink: 0;
+        }
+
+        .footer {
+            width: 100%; 
+            height: 100px; 
+            background: #0288d1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div>Logo</div>
+            <div>Menu</div>
+        </div>
+        <div class="nav">nav</div>
+        <main class="main">
+            <div class="side">side</div>
+            <div class="contents">
+                contents
+            </div>
+            <div class="side-right">side</div>
+        </main>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
