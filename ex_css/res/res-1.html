@@ -10,25 +10,56 @@
             background-color: gray;
         }
 
+        #wrapper > div {
+            border: 1px solid black;
+            float: left;
+            width:25%;
+            height:200px;
+            box-sizing: border-box;
+        }
+
+        #wrapper {
+            max-width: 1300px;
+            margin:0 auto;
+            border: 2px solid red;
+        }
+
         /* 미디어쿼리 */
         @media (max-width: 1300px){
             body {
                 background-color: green;
             }
+
         }
         @media (max-width: 768px){
             body {
                 background-color: blue;
+            }
+
+            #wrapper > div {
+            width:50%;
+            box-sizing: border-box;
             }
         }
         @media (max-width: 480px){
             body {
                 background-color: red;
             }
+
+            #wrapper > div {
+                clear: both;
+            width:100%;
+            box-sizing: border-box;
+            }
         }
     </style>
 </head>
 <body>
-    
+    <div id="wrapper">
+        <div class="el-1"></div>
+        <div class="el-2"></div>
+        <div class="el-3"></div>
+        <div class="el-4"></div>
+    </div>
 </body>
 </html>
